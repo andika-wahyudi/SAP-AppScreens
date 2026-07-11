@@ -20,6 +20,8 @@ struct ContentView: View {
                 Text("Andika Wahyudi")
                     .font(.largeTitle)
                     .foregroundStyle(.white)
+                Text("hehehheheheheh :)")
+                    .font(.largeTitle)
             }
         }
     }
