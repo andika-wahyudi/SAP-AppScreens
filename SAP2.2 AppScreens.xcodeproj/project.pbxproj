@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		37BD8A762FF8EE110097B7CC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 37BD8A752FF8EE110097B7CC /* FirebaseAnalytics */; };
+		37BD8A782FF8EE110097B7CC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 37BD8A772FF8EE110097B7CC /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		37BD8A642FF8DEE90097B7CC /* SAP2.2 AppScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAP2.2 AppScreens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BD8A762FF8EE110097B7CC /* FirebaseAnalytics in Frameworks */,
+				37BD8A782FF8EE110097B7CC /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = "SAP2.2 AppScreens";
 			packageProductDependencies = (
+				37BD8A752FF8EE110097B7CC /* FirebaseAnalytics */,
+				37BD8A772FF8EE110097B7CC /* FirebaseStorage */,
 			);
 			productName = "SAP2.2 AppScreens";
 			productReference = 37BD8A642FF8DEE90097B7CC /* SAP2.2 AppScreens.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = 37BD8A5B2FF8DEE90097B7CC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				37BD8A742FF8EE110097B7CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 37BD8A652FF8DEE90097B7CC /* Products */;
 			projectDirPath = "";
@@ -328,6 +340,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37BD8A742FF8EE110097B7CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 12.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37BD8A752FF8EE110097B7CC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37BD8A742FF8EE110097B7CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		37BD8A772FF8EE110097B7CC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37BD8A742FF8EE110097B7CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37BD8A5C2FF8DEE90097B7CC /* Project object */;
 }

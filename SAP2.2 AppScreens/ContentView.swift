@@ -14,7 +14,7 @@ struct ContentView: View {
                 .ignoresSafeArea()
             VStack {
                 Image(systemName: "globe")
-                    .imageScale(.large)
+                    .font(.system(size: 50))
                     .foregroundStyle(.white)
                     .padding()
                 Text("Andika Wahyudi")
